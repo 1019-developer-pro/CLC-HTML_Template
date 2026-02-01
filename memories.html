@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories - CLC Koratty Forane</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .memory-card {
+            transition: transform 0.3s ease;
+            border: none;
+            overflow: hidden;
+        }
+
+        .memory-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .year-header {
+            background-color: var(--bs-primary);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .member-img {
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="text-secondary fs-3">✝</span> CLC Koratty
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="memories.html">Memories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4">Cherished Memories</h1>
+            <p class="lead">Honoring those who paved the way</p>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+
+            <!-- Year 2024-2025 -->
+            <div class="mb-5">
+                <h4 class="mb-4 text-primary border-bottom pb-2">2024 - 2025</h4>
+                <div id="carousel2024" class="carousel slide pb-5" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-4 justify-content-center px-5">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card memory-card shadow-sm h-100">
+                                        <div class="member-img">Member Photo</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">Mr. Sebastian K.J.</h5>
+                                            <p class="card-subtitle mb-2 text-muted fw-bold">Former President
+                                                (2022-2024)</p>
+                                            <p class="card-text">Instrumental in organizing the 2023 Forane level youth
+                                                meet and
+                                                strengthening parish units.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card memory-card shadow-sm h-100">
+                                        <div class="member-img">Member Photo</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">Mrs. Shiny Thomas</h5>
+                                            <p class="card-subtitle mb-2 text-muted fw-bold">Secretary (2023-2024)</p>
+                                            <p class="card-text">Led the social service wing and spearheaded the 'Hope'
+                                                housing
+                                                project.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card memory-card shadow-sm h-100">
+                                        <div class="member-img">Member Photo</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">Mr. Peter Jose</h5>
+                                            <p class="card-subtitle mb-2 text-muted fw-bold">Executive Member</p>
+                                            <p class="card-text">Dedicated coordinator for Forane spiritual retreats for
+                                                over 10
+                                                years.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls (Visible if more items added later) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2024"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2024"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Year 2023 -->
+            <div class="mb-5">
+                <h4 class="mb-4 text-primary border-bottom pb-2">Batch of 2023</h4>
+                <div id="carousel2023" class="carousel slide pb-5" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-4 justify-content-center px-5">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card memory-card shadow-sm h-100">
+                                        <div class="member-img">Member Photo</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">Dr. George Vallooran</h5>
+                                            <p class="card-subtitle mb-2 text-muted fw-bold">Treasurer (2021-2023)</p>
+                                            <p class="card-text">Managed CLC funds with transparency and significantly
+                                                increased
+                                                the corpus for education aid.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card memory-card shadow-sm h-100">
+                                        <div class="member-img">Member Photo</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">Miss. Maria Varghese</h5>
+                                            <p class="card-subtitle mb-2 text-muted fw-bold">Youth Coordinator</p>
+                                            <p class="card-text">Brought innovative ideas to youth engagement and
+                                                organized the
+                                                first digital evangelization workshop.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2023"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2023"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Historical Batch -->
+            <div class="mb-5">
+                <h4 class="mb-4 text-primary border-bottom pb-2">Historical Batches</h4>
+                <div id="carouselHistorical" class="carousel slide pb-5" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-4 justify-content-center px-5">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card memory-card shadow-sm h-100 text-center">
+                                        <div class="member-img">Member Photo</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">Late Fr. Thomas Chittuparambil</h5>
+                                            <p class="card-subtitle mb-2 text-muted fw-bold">Founding Spirit</p>
+                                            <p class="card-text">The visionary leader who laid the foundation for CLC in
+                                                Koratty
+                                                Forane and nurtured its initial growth.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHistorical"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHistorical"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-gradient-primary">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="mb-3">CLC Koratty</h4>
+                    <p class="text-white-50">St. Mary's Forane Church,<br>Koratty, Thrissur,<br>Kerala, India.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-secondary mb-3">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="memories.html">Memories</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-secondary mb-3">Join Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="membership.html">Become a Member</a></li>
+                        <li><a href="membership.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-secondary mb-3">Subscribe</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <button class="btn btn-secondary" type="button">Go</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-3 text-center text-white-50">
+                <small>&copy; 2026 CLC Koratty Forane. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
